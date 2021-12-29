@@ -89,16 +89,32 @@ h1 span {
 
 @media only screen and (min-width:320px) {
     body {
-        font-size:0.3em;
+        font-size:0.5em;
+        text-align: center;
     }
 
     #container {
         width:90%;
-        height:15vh;
+        height:70vh;
+        flex-direction: column-reverse;
     }
 
+    #leftSide {
+        width:90%;
+        margin:0 auto;
+    }
+
+    #info {
+        height:30%;
+    }
     #statsDiv {
-        margin-left:10%;
+        flex-direction: column;
+        width:100%;
+        height:100%;
+    }
+
+    #rightSide {
+        width:100%;
     }
 }
 
@@ -108,9 +124,11 @@ h1 span {
     }
     #container {
         height:20vh;
+        flex-direction: row;
     }
     #statsDiv {
         margin-left:0;
+        flex-direction: row;
     }
 }
 
@@ -153,7 +171,7 @@ h1 span {
     }
     #statsDiv {
         width:70%;
-        margin-left:0;
+        margin-left:5%;
     }
 }
 
