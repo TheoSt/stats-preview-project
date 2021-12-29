@@ -2,7 +2,7 @@ body {
     margin:0;
     background-color:hsl(233, 47%, 7%);
     font-family: 'Inter', sans-serif;
-    font-size:1.2em;
+    font-size:10px;
 }
 
 main {
@@ -14,21 +14,24 @@ main {
 
 #container {
     display:flex;
-    justify-content:center;
     width:70%;
-    height:55vh;
+    height:50vh;
     background-color:hsl(244, 38%, 16%);
     border-radius:15px;
 }
 
 #leftSide {
+    display:flex;
+    flex-direction:column;
     width:50%;
+    height:100%;
     color:hsl(0, 0%, 100%);
 }
 
 #info {
-    width:70%;
-    padding:8%;
+    height:100%;
+    width:80%;
+    padding:5% 10%;
 }
 
 #info p {
@@ -41,11 +44,12 @@ h1 span {
 }
 
 #statsDiv {
-    width:70%;
     display:flex;
-    justify-content: space-between;
-    margin-left:8%;
-    margin-bottom:5%;
+    justify-content: space-evenly;
+    align-items: center;
+    height:100%;
+    width:80%;
+    margin-left:0;
 }
 
 .nums{
@@ -82,138 +86,106 @@ h1 span {
     background:rgba(184, 21, 162, 0.6);
 }
 
-@media only screen and (max-width:1650px) {
+
+@media only screen and (min-width:320px) {
     body {
-        font-size:0.9em;
-    }
-    #container {
-        width:80%;
-        height:50vh;
-    }
-}
-
-
-
-@media only screen and (max-width:900px) {
-    body {
-        font-size:0.8em;
+        font-size:0.3em;
     }
 
     #container {
-        width:85%;
-        height:40vh;
-    }
-    #info {
-        padding:5% 8%;
+        width:90%;
+        height:15vh;
     }
 
+    #statsDiv {
+        margin-left:10%;
+    }
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (min-width:481px) {
     body {
-        font-size:0.7em;
+        font-size:0.4em;
     }
     #container {
-        height:35vh;
+        height:20vh;
+    }
+    #statsDiv {
+        margin-left:0;
     }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (min-width:769px) {
     body {
         font-size:0.6em;
     }
     #container {
-       width:90%;
-       height:30vh;
-    }
-    #info{
-        width:80%;
+        height:30vh;
     }
     #statsDiv {
-        width:80%;
+        margin-left:0;
     }
 }
 
-@media only screen and (max-width:430px) {
-    body {
-        text-align:center;
-        font-size:0.8em;
-    }
-
-    #container {
-        width:70%;
-        height:90vh;
-        flex-direction: column-reverse;
-    }
-
-    #leftSide {
-        width: 100%;
-        height:70vh;
-    }
-
-    #rightSide {
-        width:100%;
-        height:25vh;
-    }
-
-    #rightSide img {
-        height:25vh;
-    }
-
-    #overlay {
-        height:25vh;
-    }
-
-    #info {
-        width:80%;
-        padding:10%;
-        margin-bottom:0%;
-    }
-
-    #info p {
-        font-size:1.1em;
-    }
-    
-    #statsDiv {
-        flex-direction: column;
-        width:80%;
-    }
-
-    .nums+p {
-        margin-top:5%;
-    }
-}
-
-@media only screen and (max-width:336px) {
-    #info {
-        padding:7%;
-    }
-}
-
-@media only screen and (max-width:320px) {
-    #container {
-        width:90%;
-    }
-}
-
-@media only screen and (max-width:255px) {
+@media only screen and (min-width:1025px) {
     body {
         font-size:0.7em;
     }
     #container {
-        width:100%;
+        height:40vh;
     }
-
     #info {
-        width:100%;
-        padding:5% 0;
+        width:70%;
     }
-
-    #rightSide img {
-        height:25vh;
+    #statsDiv {
+        margin-left:0;
     }
+}
 
-    #overlay {
-        height:25vh;
+@media only screen and (min-width:1201px) {
+    body {
+        font-size:1em;
+    }
+    #container {
+        height:45vh;
+    }
+    #info {
+        width:70%;
+    }
+    #statsDiv {
+        width:70%;
+        margin-left:0;
+    }
+}
+
+@media only screen and (min-width:1601px) {
+    body {
+        font-size:1.1em;
+    }
+    #container {
+        height:55vh;
+    }
+    #info {
+        width:70%;
+    }
+    #statsDiv {
+        width:70%;
+        margin-left:0;
+    }
+}
+
+
+@media only screen and (min-width:2001px) {
+    body {
+        font-size:1.2em;
+    }
+    #container {
+        height:55vh;
+    }
+    #info {
+        width:60%;
+    }
+    #statsDiv {
+        width:70%;
+        margin-left:0;
     }
 }
